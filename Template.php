@@ -20,7 +20,7 @@ class Template {
 
 	public function __get($key) {
 		if(!isset($this->_data[$key])) {
-			throw new Exception("Invalid property `{$key}` accessed in ");
+			throw new Exception("Invalid property `{$key}` accessed!");
 		}
 
 		return $this->_data[$key];
