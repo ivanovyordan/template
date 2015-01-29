@@ -1,9 +1,9 @@
 <?php
 class Template {
 	protected $_data = array();
-	protected $_baseViewPath = '';
+	protected $_baseViewPath;
 
-	public function __construct($baseViewPath) {
+	public function __construct($baseViewPath = '') {
 		$this->_baseViewPath = $baseViewPath;
 	}
 
